@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jin</title>
+  <meta name="description" content="Jin — AI/ML researcher.">
+  <style>
+    :root {
+      --bg: #f5f2eb;
+      --text: #111;
+      --muted: #6f6a61;
+    }
+
+    [data-theme="dark"] {
+      --bg: #111;
+      --text: #f5f2eb;
+      --muted: #a8a096;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    main {
+      width: min(700px, 100%);
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 60px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: -0.04em;
+    }
+
+    button {
+      width: 22px;
+      height: 22px;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h1, h2 {
+      margin: 0 0 24px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .content {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.88rem;
+    }
+
+    nav {
+      margin-top: 30px;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--text);
+    }
+
+    .divider {
+      margin: 0 8px;
+      color: var(--muted);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 34px;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      margin-top: 64px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        padding: 36px 18px;
+      }
+
+      header {
+        margin-bottom: 44px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <span>jin</span>
+      <button id="themeToggle" type="button" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path id="themeIcon" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </header>
+
+    <section id="home" class="active" data-title="jin">
+      <div class="content">
+        <h1>welcome.txt</h1>
+
+        &lt; hypercurious &gt;<br>
+        &lt; ai/ml researcher &gt;<br>
+        &lt; understanding intelligence for humans &gt;<br>
+        &lt; building something new. &gt;<br>
+        &lt; panta rhei &gt;<br><br>
+
+        Beep boop. I'm Jin and I'm an AI/ML researcher.<br><br>
+
+        If you're into research, artificial intelligence, philosophy, or just want to grab coffee with someone new, I'd love to meet. Please say hello!<br><br>
+
+        Have a nice day. Why not?<br><br>
+
+        <h2>bio.txt</h2>
+        overthinking engineer | dreamer, clown, only human 🐣
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <a href="#blog">blog</a>
+        <span class="divider">/</span>
+        <a href="#about">about</a>
+        <span class="divider">/</span>
+        <a href="#contact">contact</a>
+        <span class="divider">/</span>
+        <a href="#cv">cv</a>
+      </nav>
+    </section>
+
+    <section id="blog" data-title="blog — jin">
+      <h2>blog.txt</h2>
+      <div class="content">no posts yet.</div>
+      <a class="back" href="#home">← back</a>
+    </section>
+
+    <section id="about" data-title="about — jin">
+      <h2>about.txt</h2>
+      <div class="content">
+        I work on Algebraic Topology and its applications in Artificial Intelligence.<br><br>
+
+        My research interests include<br><br>
+
+        — Machine Learning<br><br>
+        — Computer Vision<br><br>
+        — Combining Topology with Machine Learning<br><br>
+
+        And I'm excited about how these fields can come together to solve complex problems.<br><br>
+
+        In my free time, I enjoy reading and hiking. I also enjoy watching birds, making children laugh and smile — I used to be a clown — and cooking good food.
+      </div>
+      <a class="back" href="#home">← back</a>
+    </section>
+
+    <section id="contact" data-title="contact — jin">
+      <h2>contact.txt</h2>
+      <div class="content">
+        Feel free to reach out if you would like to get in touch:<br><br>
+
+        💌 heyjinresearch[at]gmail[dot]com<br><br>
+
+        🐦 𝕏: @itsneuron
+      </div>
+      <a class="back" href="#home">← back</a>
+    </section>
+
+    <section id="cv" data-title="cv — jin">
+      <h2>📂curriculum_vitae.txt</h2>
+      <div class="content">
+        — 📂research_areas.txt<br><br>
+        machine learning, computer vision, algebraic topology applications in AI, and topological data analysis (TDA).<br><br>
+
+        — 📂education.txt<br><br>
+        Pamukkale University — BSc. in Mathematics (2016–2021)<br><br>
+
+        — 📂education_v2.txt<br><br>
+        5th Graduate Summer School of ATWM — 2022 / METU — Ankara, Turkey<br><br>
+        Introduction to Commutative Algebra<br><br>
+
+        6th Graduate Summer School of ATWM — 2023 / METU — Ankara, Turkey<br><br>
+        Introduction to Computational Algebraic Topology & Geometric Group Theory<br><br>
+
+        — 📂computer_skills.txt<br><br>
+        Python<br><br>
+
+        — 📂works_and_projects.txt<br><br>
+        building something new — nervita intelligence.
+      </div>
+      <a class="back" href="#home">← back</a>
+    </section>
+
+    <footer>© 2026 jin</footer>
+  </main>
+
+  <script>
+    const root = document.documentElement;
+    const sections = document.querySelectorAll("section");
+    const icon = document.getElementById("themeIcon");
+
+    const moon = "M21 12.8A8.8 8.8 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z";
+    const sun = "M12 4V2M12 22v-2M4 12H2M22 12h-2M5.64 5.64 4.22 4.22M19.78 19.78l-1.42-1.42M18.36 5.64l1.42-1.42M4.22 19.78l1.42-1.42M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z";
+
+    function setTheme(theme) {
+      root.dataset.theme = theme;
+      localStorage.setItem("theme", theme);
+      icon.setAttribute("d", theme === "dark" ? sun : moon);
+    }
+
+    function showRoute() {
+      const id = location.hash.replace("#", "") || "home";
+      const target = document.getElementById(id) || document.getElementById("home");
+
+      sections.forEach(section => section.classList.remove("active"));
+      target.classList.add("active");
+      document.title = target.dataset.title || "jin";
+    }
+
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      setTheme(root.dataset.theme === "dark" ? "light" : "dark");
+    });
+
+    setTheme(localStorage.getItem("theme") || "light");
+    addEventListener("hashchange", showRoute);
+    showRoute();
+  </script>
+</body>
+</html>
